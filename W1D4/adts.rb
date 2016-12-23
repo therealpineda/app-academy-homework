@@ -1,4 +1,4 @@
-class Stack
+class Stack # LIFO
   attr_reader :stack
 
   def initialize
@@ -16,5 +16,26 @@ class Stack
 
   def show
     stack
+  end
+end
+
+class Queue # FIFO
+  attr_reader :queue
+
+  def initialize
+    @queue = []
+  end
+
+  def enqueue(el)
+    queue.push(el)
+  end
+
+  def dequeue
+    queue.shift
+    show
+  end
+
+  def show
+    queue
   end
 end
