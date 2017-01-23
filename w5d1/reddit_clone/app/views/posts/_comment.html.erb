@@ -1,0 +1,15 @@
+<a href="<%= comment_url(comment) %>"><%= comment.content %></a>
+<br>
+by <%= comment.author.username %>
+| <%= time_ago_in_words(comment.created_at) %> ago
+
+<% if comment.children_comments.size > 0 %>
+  <ul>
+  <% comment.children_comments.each do |child_comment| %>
+
+    <li>
+      <%= render "comment", comment: child_comment %>
+    </li>
+  <% end %>
+  </ul>
+<% end %>

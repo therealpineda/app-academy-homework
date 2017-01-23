@@ -1,0 +1,22 @@
+<% url = comment.persisted? ? comment_url(comment) : comments_url %>
+
+<form action="<%= url %>" method="POST">
+  <%= auth_token %>
+
+  <input type="hidden" name="comment[post_id]" value="<%= post.id %>">
+
+  <% if comment.persisted? %>
+    <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+
+  <label for="content">Content:</label><br>
+  <textarea name="comment[content]" rows="8" cols="80"><%= comment.content %></textarea>
+
+  <br>
+
+  <input type="submit" value="<%= comment.persisted? ? 'Edit' : 'Create' %> the comment">
+</form>
+
+<p>
+<a href="<%= url %>">Cancel</a>
+</p>

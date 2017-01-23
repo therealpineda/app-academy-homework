@@ -1,0 +1,26 @@
+<a href="<%= subs_url %>">Back to all subs</a>
+
+<h1>Title: <%= @post.title %></h1>
+
+<a href="<%= edit_post_url(@post) %>">Edit</a>
+
+<p>Url:
+  <a href="<%= @post.url %>"><%= @post.url %></a>
+</p>
+
+<p><strong>Content: </strong>
+
+<br><%= @post.content %></p>
+<hr>
+<h2>Comments</h2>
+
+<ul>
+
+<% @top_level_comments.each do |comment| %>
+  <li>
+    <%= render "comment", comment: comment %>
+  </li>
+<% end %>
+</ul>
+
+<p>+ <a href="<%= new_post_comment_url(@post) %>">Add a new comment</a></p>

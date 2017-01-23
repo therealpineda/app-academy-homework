@@ -1,0 +1,29 @@
+<p><a href="<%= post_url(@comment.post) %>">Back to <%= @comment.post.title %></a></p>
+<p><%= @comment.content %><br> by <%= @comment.author.username %>
+<br><%= time_ago_in_words(@comment.created_at) %> ago</p>
+
+<form action="<%= comments_url %>" method="POST">
+  <%= auth_token %>
+
+  <input type="hidden" name="comment[post_id]" value="<%= @comment.post_id %>">
+  <input type="hidden" name="comment[parent_comment_id]" value="<%= @comment.id %>">
+
+  <label for="content">Reply to this comment:</label><br>
+  <textarea name="comment[content]" rows="8" cols="80"></textarea>
+
+  <br>
+
+  <input type="submit" value="Reply">
+</form>
+
+<h3>My Children</h3>
+
+<ul>
+<% @comment.children_comments.each do |comment| %>
+  <li>
+    <p> <a href="<%= comment_url(comment) %>"><%= comment.content %></a>
+      <br> by <%= comment.author.username %>
+    <br><%= time_ago_in_words(comment.created_at) %> ago</p>
+  </li>
+<% end %>
+</ul>
