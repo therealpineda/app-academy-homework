@@ -1,0 +1,9 @@
+html, body, header, img, nav, ul, li, h1, aside, h2, p, section, figure, figcaption, a, ol, form, label, input, select, option, footer {
+    margin: 0;
+    padding: 0;
+    
+    font: inherit;
+    color: inherit;
+    
+    background: transparent;
+} 

@@ -1,0 +1,142 @@
+/* ALL BODY AND GENERAL STYLING */
+body {
+    font-family: Arial, sans-serif;
+    width: 900px;
+    margin: 0 auto;
+    cursor: default;
+}
+
+h1 {
+    font-size: 38px;
+    margin: 15px 0px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 10px 0px;
+    color: #2f4f4f
+}
+
+a {
+    text-decoration: none;
+    color: #2f4f4f;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+/* HEADER, INCL NAV */
+
+header img {
+    width: 80px;
+    display: inline;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    padding: 20px;
+}
+
+/* SIDEBAR */
+
+aside {
+    width: 180px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #c3dbdb;
+    padding: 20px;
+}
+
+/* MAIN SECTION */
+
+figure {
+    height: 300px;
+    background: url(slaw.jpg);
+    background-size: cover;
+    background-position: -00px -40px;
+    margin-bottom: 6px;
+/*    padding: 0;*/
+} 
+
+figcaption {
+    text-align: right;
+}
+
+section {
+    width: 640px;
+    display: inline-block;
+    padding: 0 0 0 10px;
+}
+
+.ingredients-list {
+    list-style: square;
+    font-size: .85em;
+    color: #030404;
+    margin-top: 10px;
+}
+
+.ingredients-list li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.directions-list li {
+    margin: 15px 0;
+    list-style: none;
+}
+
+/*
+ol li:nth-of-type(2n) {
+    background-color: lightgrey;
+}
+*/
+
+select, input[type="text"] {
+    width: 240px;
+}
+
+textarea {
+    width: 446px;
+    height: 150px;
+}
+
+select,
+input[type="radio"],
+input[type="submit"]
+
+{
+    cursor: pointer;
+    outline: none;
+    margin: 10px 0;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    background-image: url(stars.png);
+    width: 30px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+input[type="radio"]:checked {
+    background-position: 30px 30px;
+}
+
+form input:last-child {
+    background-color: gold;
+}
+
+footer {
+    padding-left: 10px;
+    text-align: center;
+}
