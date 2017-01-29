@@ -5,9 +5,11 @@
     <title>Christopher Pineda - Broccoli Slaw Recipe</title>
     <meta name="keywords" content="broccoli slaw, recipe, Paula Deen, cooking, easy, salad">
     <meta name="author" content="Christopher Pineda">
-    <meta name="description" content="Grear broccoli slaw recipe variation of a traditional coleslaw with shredded raw broccoli stalks substituted for cabbage. This particular version uses toasted ramen noodles, almonds, and sunflower seeds, with brown sugar and vinegar in the dressing to make a nice upgrade to that boring old coleslaw.">
+    <meta name="description" content="Broccoli slaw recipe is a great variation on a traditional coleslaw recipe, with shredded raw broccoli stalks substituted for cabbage. This particular version uses toasted ramen noodles, almonds, and sunflower seeds, with brown sugar and vinegar in the dressing to make a nice upgrade to that boring old coleslaw.">
 
     <link rel="stylesheet" href="assets/css_custom_reset.css" type="text/css">
+    <link rel="stylesheet" href="assets/custom_grid.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css" type="text/css">
 
     <script>
@@ -23,81 +25,82 @@
 </head>
 
 <body>
-    <header>
-        <img width=200 src="assets/logo.png">
+    <header class="row clearfix">
+        <div class="col col-1-8">
+        <img src="assets/logo.png">
+        </div>
+        <div class="col col-7-8">
         <nav>
             <ul>
             <li><a href="#descrip">Description</a></li>
             <li><a href="#ingred">Ingredients</a></li>
-            <li><a href="#directs">Directions</a></li>
+            <li><a href="#directs">Directions</a></li><li><a href="#reviews">Reviews</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     
     <h1>Broccoli Cole Slaw</h1>
-    
-    <aside>
-        <h2><a name="ingred"></a>Ingredients</h2>
+    <div class="row clearfix">
+    <aside class="col col-1-3">
+        <h3><a name="ingred"></a>Ingredients</h3>
         <ul class="ingredients-list">
-        <br>
-        <p><strong>Salad</strong></p>
+        <h4>Salad</h4>
         <li>3/4 cup butter</li>
         <li>2 (3 oz) bags ramen noodle soup in Oriental (other flavors work too)</li>
         <li>1/4 cup slivered almonds</li>
         <li>2 (12 oz) bags broccoli cole slaw mix</li>
         <li>1/4 cup sunflower seeds</li>
         <li>chopped green onions, for garnish</li>
-        <br>
-        <p><strong>Dressing</strong></p>
+        <h4>Dressing</h4>
         <li>3/4 cup canola oil</li>
         <li>1/4 cup brown sugar or white sugar</li>
         <li>1/4 cup apple cider vinegar</li>
         <li>1 ramen noodle seasoning packet</li>
         </ul>
     </aside>
-    <section>
-    
-    <figure>
-    </figure>
-    <figcaption><a href="https://en.wikipedia.org/wiki/Broccoli_slaw">Broccoli slaw Wiki</a></figcaption>
-    <a name="descrip"></a><h2>Description</h2>
-    <p>Broccoli slaw is a variation of traditional coleslaw with shredded raw broccoli stalks substituted for cabbage. This particular version uses toasted ramen noodles, almonds, and sunflower seeds, with brown sugar and vinegar in the dressing to make for a nice light (tasting!) upgrade to that boring old coleslaw.</p></a>
-    <h2><a name="directs"></a>Directions</h2>
-    <ol class="directions-list">
-    <li>Melt butter in a large skillet over low/medium heat</li>
-    <li>Put ramen noodles in a bag and crush them with a rolling pin</li>
-    <li>Add noodles and almonds to skillet and saute, stirring occasionally (keep temperature at low/medium heat) until golden brown</li>
-    <li>Meanwhile, whisk together: canola oil, sugar, apple cider vinegar, and ramen noodle seasoning packet in a small bowl</li>
-    <li>Place shredded broccoli into large bowl and toss with the noodles, almonds, and sunflower seeds</li>
-    <li>Pour dressing over salad and toss to coat</li>
-    <li>Garnish with chopped green onions</li>
-    </ol>
-    </section>
-    <section id="reviews">
-    <h2>Reviews</h2>
-    <form id="review-form" method="post" action="/reviews">
-    <label for="name">Name </label>
-    <br>
-    <input id="name" type="text" placeholder="Name">
-    <br>
-    <label for="1">1 <input id="1" type="radio" name="rating-radio" value="1" checked=true>
-    <label for="2">2 <input id="2" type="radio" name="rating-radio" value="2">
-    <label for="3">3 <input id="3" type="radio" name="rating-radio" value="3">
-    <label for="4">4 <input id="4" type="radio" name="rating-radio" value="4">
-    <label for="5">5 <input id="5" type="radio" name="rating-radio" value="5">
-    <br>
-    <select id="expertise" name="cook_expertise">
-    <option selected=true disabled=true>-- Select Cooking Expertise --</option>
-    <option value="some">Sometimes Cook</option>
-    <option value="everyday">Cook Everyday</option>
-    <option value="hobby">Cooking is a Hobby</option>
-    <option value="pro">Professional Chef</option>
-    </select>
-    <br>
-    <textarea name="review" placeholder="Your review..."></textarea>
-    <br>
-    <input type="submit" value="Submit Review">
-    </form>
+    <section class="col col-2-3">
+        <figure><img src="assets/slaw.jpg"></figure>
+        <figcaption><a href="https://en.wikipedia.org/wiki/Broccoli_slaw">Broccoli slaw wiki</a></figcaption>
+        <a name="descrip"></a><h2>Description</h2>
+        <p>Broccoli slaw is a variation on traditional coleslaw with shredded raw broccoli stalks substituted for cabbage. This particular version uses toasted ramen noodles, almonds, and sunflower seeds, with brown sugar and vinegar in the dressing to make for a nice light (tasting!) upgrade to that boring old coleslaw.</p>
+        <h2><a name="directs"></a>Directions</h2>
+        <ol class="directions-list">
+        <li>Melt butter in a large skillet over low/medium heat</li>
+        <li>Put ramen noodles in a bag and crush them with a rolling pin</li>
+        <li>Add noodles and almonds to skillet and saute, stirring occasionally (keep temperature at low/medium heat) until golden brown</li>
+        <li>Meanwhile, whisk together: canola oil, sugar, apple cider vinegar, and ramen noodle seasoning packet in a small bowl</li>
+        <li>Place shredded broccoli into large bowl and toss with the noodles, almonds, and sunflower seeds</li>
+        <li>Pour dressing over salad and toss to coat</li>
+        <li>Garnish with chopped green onions</li>
+        </ol>
+        </section>
+    </div>
+    <section class="reviews row clearfix">
+        <h2><a name="reviews"></a>Reviews</h2>
+        <form id="review-form" method="post" action="/reviews">
+            <label for="name">Name </label>
+            <br>
+            <input id="name" type="text" placeholder="Name">
+            <br>
+            <label for="1">1 <input id="1" type="radio" name="rating-radio" value="1" checked=true></label>
+            <label for="2">2 <input id="2" type="radio" name="rating-radio" value="2"></label>
+            <label for="3">3 <input id="3" type="radio" name="rating-radio" value="3"></label>
+            <label for="4">4 <input id="4" type="radio" name="rating-radio" value="4"></label>
+            <label for="5">5 <input id="5" type="radio" name="rating-radio" value="5"></label>
+            <br>
+            <select id="expertise" name="cook_expertise">
+            <option selected=true disabled=true>-- Select Cooking Expertise --</option>
+            <option value="some">Sometimes Cook</option>
+            <option value="everyday">Cook Everyday</option>
+            <option value="hobby">Cooking is a Hobby</option>
+            <option value="pro">Professional Chef</option>
+            </select>
+            <br>
+            <textarea name="review" placeholder="Your review..."></textarea>
+            <br>
+            <input type="submit" value="Submit Review">
+        </form>
     </section>
     <footer>
     <p>Recipe by <a href="http://www.pauladeen.com/broccoli-cole-slaw">Paula Deen</a>.</p></footer>

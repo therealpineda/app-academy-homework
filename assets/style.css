@@ -1,20 +1,34 @@
 /* ALL BODY AND GENERAL STYLING */
 body {
-    font-family: Arial, sans-serif;
-    width: 900px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    width: 80%;
     margin: 0 auto;
     cursor: default;
 }
 
 h1 {
-    font-size: 38px;
+    font-size: 50px;
+    font-weight: 300;
     margin: 15px 0px;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin: 10px 0px;
     color: #2f4f4f
+}
+
+h3 {
+    font-size: 24px;
+    margin: 7px;
+    color: #2f4f4f
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0px;
+    color: #000;   
 }
 
 a {
@@ -24,48 +38,50 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: blue;
+    color: darkmagenta;
     cursor: pointer;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /* HEADER, INCL NAV */
 
 header img {
-    width: 80px;
-    display: inline;
+    width: 80%;
+    float: left;
 }
 
 nav {
-    display: inline-block;
+    float: right;
 }
 
-nav li {
+nav ul li {
     display: inline-block;
 }
 
 nav li a {
     padding: 20px;
+    display: block;
 }
 
 /* SIDEBAR */
 
 aside {
-    width: 180px;
     display: inline-block;
     vertical-align: top;
     background-color: #c3dbdb;
-    padding: 20px;
+    padding: 7px;
 }
 
 /* MAIN SECTION */
 
-figure {
-    height: 300px;
-    background: url(slaw.jpg);
-    background-size: cover;
-    background-position: -00px -40px;
+figure img {
+    width: 100%;
     margin-bottom: 6px;
-/*    padding: 0;*/
 } 
 
 figcaption {
@@ -73,7 +89,6 @@ figcaption {
 }
 
 section {
-    width: 640px;
     display: inline-block;
     padding: 0 0 0 10px;
 }
@@ -82,7 +97,7 @@ section {
     list-style: square;
     font-size: .85em;
     color: #030404;
-    margin-top: 10px;
+    padding: 0px 10px;
 }
 
 .ingredients-list li {
@@ -101,13 +116,13 @@ ol li:nth-of-type(2n) {
 }
 */
 
-select, input[type="text"] {
-    width: 240px;
+input[type="text"], select {
+    width: 35%;
 }
 
 textarea {
-    width: 446px;
-    height: 150px;
+    width: 70%;
+    height: 130px;
 }
 
 select,
@@ -118,6 +133,7 @@ input[type="submit"]
     cursor: pointer;
     outline: none;
     margin: 10px 0;
+    font-size: .9em;
 }
 
 input[type="radio"] {
@@ -132,11 +148,15 @@ input[type="radio"]:checked {
     background-position: 30px 30px;
 }
 
-form input:last-child {
-    background-color: gold;
+form input[type="submit"] {
+    background-color: #c3dbdb;
+    padding: 8px 10px;
+    border: 1px solid black;
+    border-radius: 5%;
 }
 
 footer {
     padding-left: 10px;
     text-align: center;
+    font-size: .85em;
 }
